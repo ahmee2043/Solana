@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Hand-off</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div id="topbar">
+      <div class="topbar-container">
+        <div id="logo"><img src="assets/Link → logotype.e4df684f.svg.png"></div>   
+        <div id="Menu">
+    <div class="dropdown">        
+        <h4 class="dropdown-title">Learn <i class="fa fa-chevron-down" id="drop"></i></h4>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="">Solana Docs</a></li>
+                <li><a href="">Solana Developers</a></li>
+                <li><a href="">Solana Validator</a></li>
+                <li><a href="">Solana Community</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown">
+        <h4 class="dropdown-title">Build <i class="fa fa-chevron-down"></i></h4>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="">Payment</a></li>
+                <li><a href="">Gaming</a></li>
+                <li><a href="">NFTs</a></li>
+                <li><a href="">DeFi</a></li>
+                <li><a href="">DAOs</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown">
+        <h4 class="dropdown-title">Solution <i class="fa fa-chevron-down"></i></h4>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="">Mine</a></li>
+                <li><a href="">Profit</a></li>
+                <li><a href="">Stakes</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown">
+        <h4 class="dropdown-title">Network <i class="fa fa-chevron-down"></i></h4>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="">Solana Docs</a></li>
+                <li><a href="">Solana Developers</a></li>
+                <li><a href="">Solana Validator</a></li>
+                <li><a href="">Solana Community</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="dropdown" >
+        <h4 class="dropdown-title">Community <i class="fa fa-chevron-down"></i></h4>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="">Solana Docs</a></li>
+                <li><a href="">Solana Developers</a></li>
+                <li><a href="">Solana Validator</a></li>
+                <li><a href="">Solana Community</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="hamburger" id="hamburger">
+  <i class="fa fa-bars"></i>
+</div>
+      </div>
+<div class="mobile-nav" id="mobileNav">
+  <div class="close-btn" id="closeNav">&times;</div>
+
+  <!-- Repeat each dropdown here like this -->
+  <div class="mobile-dropdown">
+    <h4>Learn</h4>
+    <div class="mobile-dropdown-content">
+      <a href="#">Solana Docs</a>
+      <a href="#">Solana Developers</a>
+      <a href="#">Solana Validator</a>
+      <a href="#">Solana Community</a>
+    </div>
+  </div>
+
+</div>
+
+    </div>
+    <section class="Home">
+     <section class="main-content">
+    <div class="content-container">
+      <h1>Powerful for developers. Fast for everyone.</h1>
+      <p>
+        Bring blockchain to the people. Solana supports experiences for power users, new consumers, and everyone in between.
+      </p>
+      <div class="button-group">
+        <button class="start-building">START BUILDING</button>
+        <button class="read-docs">READ DOCS</button>
+      </div>
+    </div>
+     </section>
+
+<div class="logos-section">
+    <h2>POWERING TOOLS AND INTEGRATIONS FROM COMPANIES ALL AROUND THE WORLD</h2>
+<div class="logos-wrapper">
+  <div class="logos-track" id="logosTrack">
+    <!-- Add 1 set of logos -->
+    <img src="assets/Logo.png" />
+    <img src="assets/Logo (1).png" />
+    <img src="assets/Logo (3).png" />
+    <img src="assets/Logo (4).png" />
+    <img src="assets/Logo (5).png" />
+    <img src="assets/Logo (6).png" />
+    <img src="assets/Logo (7).png" />
+    <img src="assets/Logo (8).png" />
+    <img src="assets/Logo (9).png" />
+  </div>
+</div>
+
+
+
+</div>
+  </section>
+ <script>
+  const logosTrack = document.getElementById('logosTrack');
+  const logos = Array.from(logosTrack.children);
+  const wrapperWidth = window.innerWidth;
+
+  // Keep cloning until width of track > 2x screen width
+  while (logosTrack.scrollWidth < wrapperWidth * 5) {
+    logos.forEach(logo => {
+      const clone = logo.cloneNode(true);
+      logosTrack.appendChild(clone);
+    });
+  }
+</script>
+
+
+ 
+  <section class="slider-section">
+    <div class="slider-container">
+      <button class="nav prev">&#10094;</button>
+
+      <div class="slide active">
+        <img src="assets/image (1).png" alt="Slide 1" class="slide-image" />
+        <div class="slide-content">
+          <div class="slide-tag">TOKEN EXTENSIONS</div>
+          <div>
+          <h2 class="slide-title">Coindesk: Token Extensions Update to SPL Token Program Live After Year in Development</h2>
+          <p class="slide-description">
+            Token extensions let developers hard code restrictions in their digital assets,
+            enhancing compliance controls for businesses building on Solana.
+          </p></div>
+          <div class="button-div"><button class="read-more-btn"><a href="#" >READ MORE</a></button></div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/gaming-image.jpg" alt="Slide 2" class="slide-image" />
+        <div class="slide-content">
+          <div class="slide-tag">NEW FEATURE</div>
+          <div>
+          <h2 class="slide-title">Introducing Smart Contracts<br>on Solana</h2>
+          <p class="slide-description">
+            Explore the capabilities of smart contracts on Solana, enabling decentralized applications with high throughput and low fees.
+          </p></div>
+        <div class="button-div"><button class="read-more-btn"><a href="#" >READ MORE</a></button></div>
+        </div>
+      </div>
+       <div class="slide">
+        <img src="assets/nft-image.jpg" alt="Slide 2" class="slide-image" />
+        <div class="slide-content">
+          <div class="slide-tag">DEVELOPER TOOLS</div>
+         <div> <h2 class="slide-title">New SDK Released for Enhanced Blockchain Integrations</h2>
+          <p class="slide-description">
+            The latest SDK update provides developers with advanced tools to streamline blockchain integration and improve application performance.
+          </p></div>
+          <div class="button-div"><button class="read-more-btn"><a href="#" >READ MORE</a></button></div>
+        </div>
+      </div>
+
+      <button class="nav next">&#10095;</button>
+    </div>
+  </section>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    let current = 0;
+
+    document.querySelector(".next").addEventListener("click", () => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+      slides[current].classList.remove("active");
+      current = (current - 1 + slides.length) % slides.length;
+      slides[current].classList.add("active");
+    });
+  </script>
+  <section class="main-section">
+  <div class="section-1">
+    <h2>Join a community of millions.</h2>
+
+    <div class="stats1">
+      <div class="stat-item">
+        <h1 data-target="11.5" data-suffix="M+" class="counter-1" >0M+</h1>
+        <p class="counter-1para">ACTIVE ACCOUNTS</p>
+      </div>
+      <div class="stat-item">
+        <h1 data-target="21.9" data-suffix="M" class="counter-2">0</h1>
+        <p class="counter-2para">NFTs MINTED</p>
+      </div>
+      <div class="stat-item">
+        <h1 data-target="0.0025" data-suffix="$" class="counter-3">$0.000</h1>
+        <p class="counter-3para">AVERAGE COST PER TRANSACTION</p>
+      </div>
+    </div>
+  </div>
+  
+<section class="adoption-section">
+  <div class="container">
+    <div class="intro">
+      <h1>Made for <br class="hide">mass adoption.</h1>
+      <p class="live-data">LIVE DATA</p>
+    </div>
+
+    
+    <div class="features-grid">
+      <div class="feature-column">
+        <div class="card fast">
+          <h3 class="card-title">Fast</h3>
+          <p class="para">Don’t keep your users waiting. Solana has block times of 400 milliseconds — and as hardware gets faster, so will the network.</p>
+          <span class="metric">0</span>
+          <p class="metric-label">Transactions Per Second</p>
+        </div>
+
+        <div class="card decentralized">
+          <h3 class="card-title">Scalable</h3>
+          <p class="para">Get big, quick. Solana is made to handle thousands of transactions per second, and fees for both developers and users remain less than $0.0025..</p>
+          <span class="metric">0</span>
+          <p class="metric-label">Total Transactions</p>
+        </div>
+      </div>
+
+      <div class="feature-column">
+        <div class="card scalable">
+          <h3 class="card-title">Decentralized</h3>
+          <p class="para">The Solana network is validated by thousands of nodes that operate independently of each other,ensuring your data remains secure and censorship resistant.</p>
+          <span class="metric">0</span>
+          <p class="metric-label">Validator Nodes</p>
+        </div>
+
+        <div class="card energy">
+          <h3 class="card-title">Energy Efficient</h3>
+          <p class="para">Solana’s proof of stake network and other innovations minimize its impact on the <span style="color: aqua;">environment</span>. Each Solana transaction uses about the same energy as a few Google searches.</p>
+          <span class="metric">0%</span>
+          <p class="metric-label">Net Carbon Impact</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('[data-target]').forEach(el => {
+      const target = parseFloat(el.getAttribute('data-target'));
+      const suffix = el.getAttribute('data-suffix') || '';
+      let count = 0;
+      const speed = 50;
+
+      // Clear initial text
+      el.textContent = '';
+
+      const timer = setInterval(() => {
+        count += target / 100;
+
+        if (count >= target) {
+          count = target;
+          clearInterval(timer);
+        }
+
+        let formattedCount;
+
+        if (suffix === 'M+' || suffix === 'M') {
+          formattedCount = count.toFixed(1) + suffix;
+        } else if (suffix === '$') {
+          formattedCount = '$' + count.toFixed(4);
+        } else {
+          formattedCount = count;
+        }
+
+        el.textContent = formattedCount;
+      }, speed);
+    });
+  });
+</script>
+
+<section class="case-studies">
+  <div class="case-studies-glow">
+  <div class="header-row">
+
+    <h2>Case Studies</h2>
+    <button class="cta-button">Go to Case Studies</button>
+  </div>
+  <div class="Card1">
+    <div class="card1-case">
+    <h3><img src="assets/solana-sol-icon (1).svg" alt="">Case Study</h3>
+    <h2>Helium</h2></div>
+    <img src="assets/image (2) (1).png" style="width: 50%;">
+    <h1>Helium brings real-world 5G networks on Solana</h1>
+  </div>
+<div class="card-container">
+  <div class="card2">
+    <div class="card2-case">
+    <h3><img src="assets/solana-sol-icon (1).svg" alt="" width="20px;">Case Study</h3>
+    <h2>GainForest</h2></div>
+    <img src="assets/image (1) (1).png" class="card-top-img" />
+    <div class="card-footer">
+      <p>GainForest brings transparency to climate preservation efforts</p>
+      <img src="assets/Button.png" alt="Arrow Icon" class="arrow-icon" />
+    </div>
+  </div>
+
+  <div class="card2">
+    <div class="card3-case">
+    <h3><img src="assets/solana-sol-icon (1).svg" alt="" style="width: 20px;">Case Study</h3>
+    <h2>Hivemapper</h2></div>
+    <img src="assets/image (1) (1).png" class="card-top-img" />
+    <div class="card-footer">
+      <p>Hivemapper decentralizes mapping with better real-time data and community incentives</p>
+      <img src="assets/Button.png" alt="Arrow Icon" class="arrow-icon" />
+    </div>
+  </div>
+
+  <div class="card2">
+    <div class="card4-case">
+    <h3><img src="assets/solana-sol-icon (1).svg" alt="" style="width: 20px;">Case Study</h3>
+    <h2>ASICS</h2></div>
+    <img src="assets/image (2) (1).png" class="card-top-img" />
+    <div class="card-footer">
+      <p>ASICS builds loyalty program with Solana Pay</p>
+      <img src="assets/Button.png" alt="Arrow Icon" class="arrow-icon" />
+    </div>
+  </div>
+</div>
+</div>
+ 
+</section>
+ <div class="tab-container">
+    <div class="container2">
+     <div class="navbar">
+    <h1 class="heading">Build for growth.</h1>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="payments">Payments</button>
+      <button class="tab-button" data-tab="gaming">Gaming</button>
+      <button class="tab-button" data-tab="nfts">NFTs</button>
+      <button class="tab-button" data-tab="defi">DeFi</button>
+      <button class="tab-button" data-tab="daos">DAOs</button>
+    </div></div>
+
+    <div class="tab-content active" id="payments">
+      <img src="assets/tab.png" alt="Solana Pay" class="tab-image">
+      <div class="tab-text">
+       <div class="tab-text-logo"> <img src="assets/shopify.b55c8986.svg.png"></div>
+        <p>Solana Pay is now available to millions of businesses as an approved app integration on Shopify. Solana Pay is built for immediate USDC transactions, fees that are fractions of a penny, and a net-zero environmental impact.</p>
+        <a href="#" style="color:#a87ff3">Learn more about Payments on Solana</a>
+      </div>
+    </div>
+
+    <div class="tab-content" id="gaming">
+     <img src="assets/gaming-image.jpg" alt="Gaming" class="tab-image">
+     <div class="tab-text">
+        <div class="tab-text-logo"> <img src="assets/gaming.png"></div>
+        <p>Solana Pay is now available to millions of businesses as an approved app integration on Shopify. Solana Pay is built for immediate USDC transactions, fees that are fractions of a penny, and a net-zero environmental impact.</p>
+        <a href="#" style="color:#a87ff3">Learn more about Payments on Solana</a>
+      </div>
+    </div>
+
+    <div class="tab-content" id="nfts">
+      <img src="assets/nft-image.jpg" alt="NFT" class="tab-image">
+     <div class="tab-text">
+        <div class="tab-text-logo"><img src="assets/nft (2).png"></div>
+        <p>Solana Pay is now available to millions of businesses as an approved app integration on Shopify. Solana Pay is built for immediate USDC transactions, fees that are fractions of a penny, and a net-zero environmental impact.</p>
+        <a href="#" style="color:#a87ff3">Learn more about Payments on Solana</a>
+      </div>
+    </div>
+
+    <div class="tab-content" id="defi">
+      <img src="assets/tab.png" alt="DeFi">
+      <div class="tab-text">
+        <img src="assets/shopify.b55c8986.svg.png">
+        <p>Solana Pay is now available to millions of businesses as an approved app integration on Shopify. Solana Pay is built for immediate USDC transactions, fees that are fractions of a penny, and a net-zero environmental impact.</p>
+        <a href="#" style="color:#a87ff3">Learn more about Payments on Solana</a>
+      </div>
+    </div>
+
+    <div class="tab-content" id="daos">
+      <img src="assets/tab.png" alt="DAOs">
+     <div class="tab-text">
+        <img src="assets/shopify.b55c8986.svg.png">
+        <p>Solana Pay is now available to millions of businesses as an approved app integration on Shopify. Solana Pay is built for immediate USDC transactions, fees that are fractions of a penny, and a net-zero environmental impact.</p>
+        <a href="#" style="color:#a87ff3">Learn more about Payments on Solana</a>
+      </div>
+    </div>
+    </div>
+ <div class="tab-logo-wrapper">
+  <div class="tab-logo-track" id="tabLogoTrack">
+    <img src="assets/div.IndexUseCases_index-usecases__tab-content__logo__IF0Kn.png" />
+    <img src="assets/decaf.png" />
+    <img src="assets/div.IndexUseCases_index-usecases__tab-content__logo__IF0Kn (3).png" />
+    <img src="assets/div.IndexUseCases_index-usecases__tab-content__logo__IF0Kn (1).png" />
+  </div>
+</div>
+
+ </div>
+<script>
+  const tabLogoTrack = document.getElementById('tabLogoTrack');
+  const tabLogos = Array.from(tabLogoTrack.children);
+  const screenW = window.innerWidth;
+
+  while (tabLogoTrack.scrollWidth < screenW * 2) {
+    tabLogos.forEach(img => {
+      const clone = img.cloneNode(true);
+      tabLogoTrack.appendChild(clone);
+    });
+  }
+</script>
+
+
+
+ <script>
+    const tabs = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(btn => btn.classList.remove('active'));
+        tab.classList.add('active');
+
+        contents.forEach(content => {
+          content.classList.remove('active');
+        });
+
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+ <section class="community-gallery">
+  <h2>Join a thriving community.</h2>
+  <div class="gallery-wrapper">
+    <div class="gallery-track" id="galleryTrack">
+      <!-- COLUMN 1 -->
+      <div class="gallery-column col1">
+        <div class="stat-card">
+  <div class="stat-number pink">11,000</div>
+  <div class="stat-desc">SOLANA HACKER HOUSE PARTICIPANTS</div>
+</div>
+        <div class="image-card"><img src="assets/prism.png" alt=""></div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="gallery-column col2">
+        <div class="full-image wide"><img src="assets/cod warzone.png" alt="" style="border-radius: 18px;"></div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="gallery-column col3">
+        <div class="image-card"><img src="assets/div.png" alt=""></div>
+<div class="stat-card">
+  <div class="stat-number green">48,000</div>
+  <div class="stat-desc">DEVELOPERS BUILDING DURING<br>SOLANA HACKATHONS</div>
+</div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="gallery-column col4">
+        <div class="full-image narrow"><img src="assets/last-image.png" alt="" style="border-radius: 18px;"></div>
+      </div>
+    </div>
+  </div>
+  <section class="cta-section">
+  <div class="cta-content">
+    <h3>It's time to join the thousands of creators,<br>artists, and developers using Solana.</h3>
+    <button class="cta-button1">START BUILDING</button>
+  </div>
+</section>
+
+</section>
+<script>
+  const wrapper = document.querySelector('.gallery-wrapper');
+  const track = document.getElementById('galleryTrack');
+
+  for(i=1;i<=5;i++){
+  track.innerHTML += track.innerHTML;}
+
+  let scrollSpeed = 0.5;
+
+  function autoScroll() {
+    wrapper.scrollLeft += scrollSpeed;
+    if (wrapper.scrollLeft >= track.scrollWidth / 2) {
+      wrapper.scrollLeft = 0;
+    }
+    requestAnimationFrame(autoScroll);
+  }
+
+  autoScroll();
+</script>
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <p>Managed by</p>
+        <img src="assets/Link - Solana Foundation → SVG.png" alt="Solana Foundation" />
+        <div class="social-icons">
+          <img src="assets/Link - YouTube.png" alt="YouTube" />
+          <img src="assets/Link - Discord.png" alt="X" />
+          <img src="assets/Link - Reddit.png" alt="Gaming" />
+          <img src="assets/Link - Telegram.png" alt="Reddit" />
+          <img src="assets/Link - Twitter.png" alt="GitHub" />
+          <img src="assets/Link - GitHub.png" alt="Telegram" />
+        </div>
+        <div class="copyright">© 2024 Solana Foundation. All rights reserved.</div>
+      </div>
+
+      <div class="footer-column">
+        <h4>SOLANA</h4>
+        <ul>
+          <li><a href="#">Grants</a></li>
+          <li><a href="#">Break Solana</a></li>
+          <li><a href="#">Media Kit</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>GET CONNECTED</h4>
+        <ul>
+          <li><a href="#">Ecosystem</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <div class="language-selector">
+          <button class="lang-btn"><img src="assets/Button → Img.png" alt="">EN<img src="assets/Button → SVG.png"> </button>
+          <div class="language-options">
+            <div>Urdu</div>
+            <div>Arabic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
